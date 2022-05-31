@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 @endif
-                <form method="POST" action="{{ route('mahasiswa.update', $mahasiswa['id']) }}">
+                <form method="POST" action="">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">
@@ -36,8 +36,8 @@
                     <div class="mb-3">
                         <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
                         <select id="jenis_kelamin" class="form-select" name="jenis_kelamin">
-                            <option value="Laki-laki" {{ $mahasiswa['jenis_kelamin'] == 'Laki-laki'? 'selected' : ''}}>Laki-laki</option>
-                            <option value="Perempuan" {{ $mahasiswa['jenis_kelamin'] == 'Perempuan'? 'selected' : ''}}>Perempuan</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-warning">Submit</button>
@@ -45,6 +45,5 @@
             </div>
         </div>
     </div>
-
 </div>
 @endsection

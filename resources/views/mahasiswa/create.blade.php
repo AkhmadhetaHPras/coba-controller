@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 @endif
-                <form method="POST" action="{{ route('mahasiswa.store') }}">
+                <form method="POST" action="#">
                     @csrf
                     <div class="mb-3">
                         <label for="nim" class="form-label">Nim</label>

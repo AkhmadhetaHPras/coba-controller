@@ -14,7 +14,6 @@
                         <li class="list-group-item"><b>Nama: </b>{{$mahasiswa['nama']}}</li>
                         <li class="list-group-item"><b>Jenis Kelamin: </b>{{$mahasiswa['jenis_kelamin']}}</li>
                         <li class="list-group-item"><b>Jurusan: </b>{{$mahasiswa['jurusan']}}</li>
-
                     </ul>
                 </div>
             </div>

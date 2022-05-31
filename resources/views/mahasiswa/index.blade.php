@@ -5,7 +5,7 @@
         <div class="row d-flex justify-content-beetwen">
             <div class="col-5">
                 <div class="mb-3">
-                    <a class="btn btn-success" href="{{ route('mahasiswa.create') }}"> Input Mahasiswa</a>
+                    <a class="btn btn-success" href="#"> Input Mahasiswa</a>
                 </div>
             </div>
         </div>
@@ -39,9 +39,9 @@
         <td>{{ $mhs['jenis_kelamin'] }}</td>
         <td>{{ $mhs['jurusan'] }}</td>
         <td>
-            <form action="{{ route('mahasiswa.destroy',$mhs['nim']) }}" method="POST">
-                <a href="{{ route('mahasiswa.edit', $mhs['nim']) }}" class="mx-1"><i class="las la-edit"></i></a>
-                <a href="{{ route('mahasiswa.show', $mhs['nim']) }}" class="mx-1 text-success"><i class="las la-eye"></i></a>
+            <form action="" method="POST">
+                <a href="#" class="mx-1"><i class="las la-edit"></i></a>
+                <a href="#" class="mx-1 text-success"><i class="las la-eye"></i></a>
                 @csrf
                 @method('DELETE')
                 <button type="submit" style="border: none; background-color: transparent;"><i class='las la-trash-alt'></i></button>
